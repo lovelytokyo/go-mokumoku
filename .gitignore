@@ -26,3 +26,4 @@ _testmain.go
 .iml
 
 *_string.go
+*_slice.go
