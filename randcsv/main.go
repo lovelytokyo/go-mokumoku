@@ -50,8 +50,7 @@ func main() {
 	fmt.Println("id,name,price,size")
 	for i := 0; i < 100000; i++ {
 		rand.Seed(time.Now().UnixNano())
-		var rand_int int = rand.Intn(8)
+		var rand_int int = rand.Intn(9)
 		fmt.Printf("%d,%s,%d,%d\n", i, Water(rand_int), Price[rand_int], Size[rand_int])
-
 	}
 }
