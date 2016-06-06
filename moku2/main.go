@@ -11,10 +11,10 @@ import (
 )
 
 type Water struct {
-	id    int
-	name  string
-	price int
-	size  int
+	Id    int
+	Name  string
+	Price int
+	Size  int
 }
 
 func main() {
