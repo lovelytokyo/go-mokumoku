@@ -27,3 +27,10 @@ _testmain.go
 
 *_string.go
 *_slice.go
+
+.envrc
+
+*.iml
+
+bin/
+src/

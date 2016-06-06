@@ -3,7 +3,7 @@ package main
 
 import "fmt"
 
-// +gen slice:"Count"
+// +gen slice:"Count,Where"
 type Water struct {
 	id    int
 	name  string
@@ -35,4 +35,16 @@ func main() {
 		irohasu, volvic, crystalGeyser,
 		irohasu, volvic, crystalGeyser,
 	}
+
+	// 全てのWaterを数える
+	countLogic := func(w Water) bool {
+		return true
+	}
+	fmt.Println(waters.Count(countLogic))
+
+	// priceが50より大きいWaterを取得
+	whereLogic := func(w Water) bool {
+		return w.price > 50
+	}
+	fmt.Println(fmt.Sprintf("%+v", waters.Where(whereLogic)))
 }

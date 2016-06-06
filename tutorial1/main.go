@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+//go:generate stringer -type=Water
 type Water int
 
 const (
